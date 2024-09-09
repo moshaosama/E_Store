@@ -1,0 +1,217 @@
+.Sticky {
+  transition: all 5s ease;
+}
+
+.Sticky {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 50;
+}
+.Categories:hover {
+  color: rgb(24 133 82);
+}
+#Card {
+  transition: all 0.5s ease;
+}
+#Col {
+  transition: all 0.5s ease;
+}
+#Card:hover,
+#Col:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.Btn:hover {
+  color: green;
+}
+
+.form-check-input:checked {
+  background-color: green !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #888585;
+  border-radius: 10px;
+}
+#HeaderButtom {
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444141;
+}
+#footer1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 540px) {
+  #Header {
+    display: none;
+  }
+  span.navbar-brand {
+    display: none;
+  }
+  nav.navbar.navbar-expand.navbar-light {
+    display: none;
+  }
+  #Banner {
+    display: block !important;
+  }
+  #linksHeaders {
+    display: none;
+  }
+  .d-flex.align-items-center.justify-content-between {
+    display: block !important;
+  }
+  input.form-control {
+    width: 98% !important;
+    margin: 10px !important;
+  }
+  header.bg-success.w-100 {
+    position: fixed !important;
+    z-index: 50 !important;
+    top: 0px !important;
+    width: 100% !important;
+  }
+  .btn.btn-success.d-flex.justify-content-end {
+    margin: 0px !important;
+  }
+  img.w-25 {
+    display: none;
+  }
+  .w-25.text-center {
+    width: 75% !important;
+  }
+  .my-0.container {
+    display: none;
+  }
+  #payPal {
+    display: none;
+  }
+  .my-3.mx-2.w-75.carousel.slide {
+    width: 100% !important;
+  }
+  .my-3.p-1.w-50.position-relative.rounded {
+    display: none !important;
+  }
+  .rounded.p-3.d-flex.justify-content-between.align-items-center {
+    width: 100% !important;
+    margin: 0px 0px !important;
+  }
+  .carousel-inner {
+    margin: 5pc 0pc !important;
+  }
+  #featuredCategories {
+    width: 100% !important;
+  }
+  #Col {
+    width: 50% !important;
+  }
+  #Card {
+    width: 100% !important;
+  }
+  p.w-50 {
+    width: 97% !important;
+  }
+  .w-50.d-flex.justify-content-center.align-items-center.m-1 {
+    width: 97% !important;
+  }
+  #Delivery {
+    display: none !important;
+  }
+  hr.w-75 {
+    margin: 0px 1pc !important;
+    width: 91% !important;
+  }
+  #footer1 {
+    display: block;
+  }
+  #Footer2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #FormLogin {
+    margin: 25% 0%;
+  }
+  #signUpForm {
+    margin: 25% 0%;
+  }
+  #SignUpBtn {
+    margin: 0px !important;
+  }
+  #HeaderButtom {
+    display: block !important;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  #FooterRes {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  #Profile {
+    display: block !important;
+  }
+  #LinksProfile {
+    display: block !important;
+    margin: 0px -5pc !important;
+  }
+  #myAccount {
+    width: 22pc !important;
+    margin: 3pc -9pc;
+  }
+  #Dashboard {
+    margin: 0px -9pc !important;
+    width: 23pc !important;
+  }
+  #myProfile {
+    margin: 0px !important;
+    padding: 6rem !important;
+  }
+  #OrdersDasboard,
+  #OrdersTable {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  #PrindandDownload {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  #Print {
+    margin: 0px 15px !important;
+  }
+  #myOrders {
+    margin: 10px -8pc;
+  }
+  #myOrdersAdmin,
+  #myOrdersUser {
+    overflow-x: scroll;
+    width: 21pc;
+    margin: 0px -8pc;
+  }
+  #OrderDashboardUser {
+    overflow-x: scroll;
+  }
+  #EditProfile {
+    margin: 0px -8pc !important;
+  }
+  #inputName,
+  #inputEmail {
+    width: 129% !important;
+  }
+  #changePassword {
+    margin: 15px -8pc !important;
+  }
+}
