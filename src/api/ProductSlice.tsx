@@ -1,15 +1,19 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import {
+  createApi,
+  EndpointBuilder,
+  fetchBaseQuery,
+} from "@reduxjs/toolkit/query/react";
 import { Cart, CheckOut, Products } from "../interfcaes";
 
 export const ProductReducer = createApi({
   reducerPath: "Product",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
-  endpoints: (builder) => ({
+  endpoints: (builder: EndpointBuilder<any, any, any>) => ({
     getProduct: builder.query<Products, void>({
       query: () => "product",
     }),
     addCart: builder.mutation({
-      query: (id) => ({
+      query: (id: string) => ({
         method: "POST",
         url: `Cart/${id}`,
         headers: {
@@ -24,7 +28,7 @@ export const ProductReducer = createApi({
       query: () => "checkout",
     }),
     getCheckOutByUser: builder.query<CheckOut, void>({
-      query: (_id) => `checkout/${_id}`,
+      query: (_id: any) => `checkout/${_id}`,
     }),
     getCheckOutById: builder.query({
       query: (id: any) => `checkOutByid/${id}`,

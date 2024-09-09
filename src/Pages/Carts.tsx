@@ -7,7 +7,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 function Carts() {
   const [Show, setShow] = useState(false);
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
+  const [,setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
   const [Sum, setSum] = useState(0);
   const User = JSON.parse(localStorage.getItem("user")!);
   const handleShow = () => {

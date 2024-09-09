@@ -10,7 +10,6 @@ import Account from "./account";
 import Orders from "./myOrders";
 import EditProfile from "./editProfile";
 import ChangePassword from "./ChangePassword";
-import Login from "./Login";
 
 function MyProfile() {
   const Navigation = useNavigate();
@@ -19,7 +18,6 @@ function MyProfile() {
     Navigation("/Login");
     window.location.reload();
   };
-  const User = JSON.parse(localStorage.getItem("user")!);
   return (
     <>
       {/* Links Dashboard */}

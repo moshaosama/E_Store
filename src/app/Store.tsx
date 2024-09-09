@@ -5,7 +5,7 @@ export const Store = configureStore({
   reducer: {
     [ProductReducer.reducerPath]: ProductReducer.reducer,
   },
-  middleware: (defaultMiddleware) =>
+  middleware: (defaultMiddleware: any) =>
     defaultMiddleware().concat(ProductReducer.middleware),
 });
 

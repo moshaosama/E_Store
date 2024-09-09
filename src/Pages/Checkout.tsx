@@ -8,7 +8,7 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
-  const [session, setSession] = useState<any>();
+  const [, setSession] = useState<any>();
   const [Carts, setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
   const token = localStorage.getItem("Token");
   const user = JSON.parse(localStorage.getItem("user")!);

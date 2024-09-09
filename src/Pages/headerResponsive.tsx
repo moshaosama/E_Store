@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Card, Col, Container, Offcanvas } from "react-bootstrap";
 import dataCategories from "../Components/data";
 import { AiOutlineAlignLeft } from "react-icons/ai";
@@ -6,13 +6,13 @@ import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BsCartCheck } from "react-icons/bs";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import Carts from "./Carts";
+
 import { IoPersonSharp } from "react-icons/io5";
 
 function FooterRes() {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
+  const [, setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
   const Cart = JSON.parse(localStorage.getItem("Cart")!);
   const User = JSON.parse(localStorage.getItem("user")!);
   const handleShow1 = () => {
