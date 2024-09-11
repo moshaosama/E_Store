@@ -214,4 +214,55 @@
   #changePassword {
     margin: 15px -8pc !important;
   }
+  #FormCheckOut {
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    margin: 5pc 0pc !important;
+  }
+  #FirstName,
+  #emailAddress,
+  #streetAddress,
+  #City {
+    width: 18pc !important;
+  }
+  #Form1,
+  #Form2,
+  #Form3 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #FormLastName,
+  #FormPhone,
+  #FormCountry {
+    margin: 0 !important;
+  }
+  #FormZip {
+    margin: 10px 0px !important;
+  }
+  #lastName,
+  #Phone,
+  #Country,
+  #ZipCode {
+    margin: 0px 10px !important;
+    width: 18pc !important;
+  }
+  #OrderSummary {
+    width: 79% !important;
+  }
+  #RazorPay {
+    display: none !important;
+  }
+  #PersonalDet {
+    margin: 0px !important;
+  }
+  #ConOrder {
+    margin: 0px -12pc !important;
+  }
+  #ConShip {
+    margin: 0px -2pc !important;
+  }
+  #Details {
+    margin: 4pc 0px !important;
+  }
 }

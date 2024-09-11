@@ -26,7 +26,7 @@ const Details = () => {
   return (
     <>
       <Container ref={detailsRef}>
-        <div className="bg-success text-light my-4 p-1 rounded">
+        <div className="bg-success text-light my-4 p-1 rounded" id="Details">
           <p className="my-2 mx-2">
             Thank You{" "}
             <span className="text-dark" style={{ fontWeight: "bolder" }}>

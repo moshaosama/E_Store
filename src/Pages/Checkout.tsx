@@ -32,9 +32,10 @@ const Checkout = () => {
     <>
       <div
         className="d-flex justify-content-between"
+        id="FormCheckOut"
         style={{ padding: "0px 7pc" }}
       >
-        <div className="w-50 m-4">
+        <div className="w-50 m-4" id="PersonalDet">
           <Container>
             <div className="my-5">
               <Container>
@@ -43,36 +44,49 @@ const Checkout = () => {
                     <h6 style={{ fontWeight: "bolder" }}>Personal Details</h6>
                   </li>
                   <Form>
-                    <div className="d-flex justify-content-betwen my-3">
+                    <div
+                      className="d-flex justify-content-betwen my-3"
+                      id="Form1"
+                    >
                       <p>
                         <Form.Label>First Name</Form.Label>
                         <Form.Control
+                          id="FirstName"
                           type="text"
                           placeholder="John"
                           style={{ width: "190%" }}
                         />
                       </p>
-                      <p style={{ margin: "0px 0px 0px 13pc" }}>
+                      <p
+                        style={{ margin: "0px 0px 0px 13pc" }}
+                        id="FormLastName"
+                      >
                         <Form.Label>Last Name</Form.Label>
                         <Form.Control
+                          id="lastName"
                           type="text"
                           placeholder="Doe"
                           style={{ width: "190%" }}
                         />
                       </p>
                     </div>
-                    <div className="d-flex justify-content-betwen my-3 ">
+                    <div
+                      className="d-flex justify-content-betwen my-3 "
+                      id="Form2"
+                    >
                       <p>
                         <Form.Label>Email Address</Form.Label>
                         <Form.Control
+                          id="emailAddress"
                           type="text"
                           placeholder="John@example.com"
                           style={{ width: "190%" }}
                         />
                       </p>
-                      <p style={{ margin: "0px 0px 0px 13pc" }}>
+                      <p style={{ margin: "0px 0px 0px 13pc" }} id="FormPhone">
                         <Form.Label>Phone Number</Form.Label>
                         <Form.Control
+                          id="Phone"
                           type="text"
                           placeholder="+20 1004365707"
                           style={{ width: "190%" }}
@@ -88,31 +102,38 @@ const Checkout = () => {
                     <p className="my-3">
                       <Form.Label>Street Address</Form.Label>
                       <Form.Control
+                        id="streetAddress"
                         type="text"
                         placeholder="123 Boulevard Rd, Beverley Hills"
                         style={{ width: "106%" }}
                       />
                     </p>
-                    <div className="d-flex justify-content-between my-3">
+                    <div
+                      className="d-flex justify-content-between my-3"
+                      id="Form3"
+                    >
                       <p>
                         <Form.Label>City</Form.Label>
                         <Form.Control
+                          id="City"
                           type="text"
                           placeholder="Los Angeles"
                           style={{ width: "121%" }}
                         />
                       </p>
-                      <p style={{ margin: "0px 0pc 0px 2pc" }}>
+                      <p style={{ margin: "0px 0pc 0px 2pc" }} id="FormCountry">
                         <Form.Label>Country</Form.Label>
                         <Form.Control
+                          id="Country"
                           type="text"
                           placeholder="United States"
                           style={{ width: "131%" }}
                         />
                       </p>
-                      <p style={{ margin: "0px 0pc 0px 3.3pc" }}>
+                      <p style={{ margin: "0px 0pc 0px 3.3pc" }} id="FormZip">
                         <Form.Label>Zip Code</Form.Label>
                         <Form.Control
+                          id="ZipCode"
                           type="text"
                           placeholder="2244"
                           style={{ width: "122%" }}
@@ -147,6 +168,7 @@ const Checkout = () => {
                       <p
                         style={{ border: "1px solid #ccc" }}
                         className="w-100 mx-2 rounded p-2"
+                        id="RazorPay"
                       >
                         <div className="d-flex justify-content-between align-items-center w-100">
                           <Form.Label for="RazorPay">
@@ -189,10 +211,11 @@ const Checkout = () => {
                           Navigation("/myAccount/Orders");
                           window.location.reload();
                         }}
+                        id="ConOrder"
                       >
                         Confirm Order
                       </div>
-                      <div className="btn btn-success">Continue Shipping</div>
+                      <div className="btn btn-success" id="ConShip">Continue Shipping</div>
                     </div>
                   </Form>
                 </ol>
@@ -202,6 +225,7 @@ const Checkout = () => {
         </div>
         <div
           className="d-flex justify-content-start m-5 rounded d-flex flex-column"
+          id="OrderSummary"
           style={{
             border: "1px solid #bbb",
             boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
