@@ -7,7 +7,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 function Carts() {
   const [Show, setShow] = useState(false);
-  const [,setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
+  const [, setCart] = useState(JSON.parse(localStorage.getItem("Cart")!));
   const [Sum, setSum] = useState(0);
   const User = JSON.parse(localStorage.getItem("user")!);
   const handleShow = () => {
@@ -128,10 +128,11 @@ function Carts() {
                 className=" btn btn-success position-fixed text-center d-flex align-items-center justify-content-between"
                 style={{ bottom: "10px", width: "18%" }}
               >
-                <div>
-                  <p>Proceed To Checkout</p>
+                <div className="d-flex align-items-center">
+                  <p style={{ fontWeight: "bolder" }} className="my-1">
+                    Proceed To Checkout
+                  </p>
                 </div>
-                <div className="btn btn-light">$ {Sum}</div>
               </div>
             </Link>
           </Container>

@@ -57,7 +57,7 @@ function Header() {
                     <span style={{ fontWeight: "bolder" }}>|</span>
                     <Nav.Link style={{ fontWeight: "bolder" }}>
                       <Link
-                        to={User ? "/Account" : "/Login"}
+                        to={User ? "/myAccount/Account" : "/Login"}
                         className="text-decoration-none text-dark"
                       >
                         myAccount

@@ -97,8 +97,12 @@ function Footer() {
             </div>
           </div>
           <hr />
-          <div className="d-flex">
-            <div id="footer1">
+          <div className="d-flex" style={{ gap: "20pc" }}>
+            <div
+              id="footer1"
+              className="d-flex justify-content-between"
+              style={{ gap: "10pc" }}
+            >
               <div>
                 <th className="my-3">Company</th>
                 <tr className="d-flex flex-column">
@@ -118,7 +122,7 @@ function Footer() {
                 </tr>
               </div>
             </div>
-            <div id="footer1">
+            <div id="footer1" style={{ gap: "10pc" }}>
               <div>
                 <th className="my-3">My Account</th>
                 <tr className="d-flex flex-column">

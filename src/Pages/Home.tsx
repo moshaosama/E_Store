@@ -46,6 +46,9 @@ function Home() {
   function handlePage() {
     setPage(page + 1);
   }
+  function prePage() {
+    setPage(page - 1);
+  }
 
   return (
     <>
@@ -84,9 +87,9 @@ function Home() {
               <div className="btn btn-success">Shop Now</div>
             </div>
           </Carousel.Item>
-          {/* <Carousel.Item className="w-100">
+          <Carousel.Item className="w-100">
             <img
-              src="https://kachabazar-store-nine.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FrscqZJNz%2Fslider-1.webp&w=1080&q=75"
+              src="https://kachabazar-store-nine.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fahossain%2Fimage%2Fupload%2Fv1697688492%2Fsettings%2Fslider-3_iw4nnf.jpg&w=1080&q=75"
               alt=""
               className="w-100"
             />
@@ -97,7 +100,7 @@ function Home() {
               <p>The Best Quality Products Guaranted!</p>
               <div className="btn btn-success">Shop Now</div>
             </div>
-          </Carousel.Item> */}
+          </Carousel.Item>
         </Carousel>
         {/*///////////////////////////////////////////////*/}
         <div
@@ -285,8 +288,14 @@ function Home() {
                               <span className="text-danger">{el?.stock}</span>
                             </span>
                           </div>
-                          <Card.Img variant="top" src={el?.image} />
+
                           <Card.Body>
+                            <Card.Img
+                              variant="top"
+                              src={el?.image}
+                              className="w-25"
+                              id="Image"
+                            />
                             <p
                               style={{
                                 fontSize: "15px",
@@ -313,12 +322,13 @@ function Home() {
                   })}
                 </Row>
               </div>
-              <div
-                className="btn btn-success d-flex justify-content-end"
-                style={{ margin: "10px 0px 0px 66pc" }}
-                onClick={handlePage}
-              >
-                Next
+              <div className="d-flex justify-content-between">
+                <div className="btn btn-success " onClick={prePage}>
+                  Previous
+                </div>
+                <div className="btn btn-success" onClick={handlePage}>
+                  Next
+                </div>
               </div>
             </>
           )}

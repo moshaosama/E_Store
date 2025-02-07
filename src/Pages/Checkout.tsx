@@ -53,7 +53,7 @@ const Checkout = () => {
                         <Form.Control
                           id="FirstName"
                           type="text"
-                          placeholder="John"
+                          placeholder={user.data.userName}
                           style={{ width: "190%" }}
                         />
                       </p>
@@ -65,7 +65,7 @@ const Checkout = () => {
                         <Form.Control
                           id="lastName"
                           type="text"
-                          placeholder="Doe"
+                          placeholder="Osama"
                           style={{ width: "190%" }}
                         />
                       </p>
@@ -79,7 +79,9 @@ const Checkout = () => {
                         <Form.Control
                           id="emailAddress"
                           type="text"
-                          placeholder="John@example.com"
+                          placeholder={
+                            user ? user.data.Email : "john@gmail.com"
+                          }
                           style={{ width: "190%" }}
                         />
                       </p>
@@ -117,7 +119,7 @@ const Checkout = () => {
                         <Form.Control
                           id="City"
                           type="text"
-                          placeholder="Los Angeles"
+                          placeholder="Berlin"
                           style={{ width: "121%" }}
                         />
                       </p>
@@ -126,7 +128,7 @@ const Checkout = () => {
                         <Form.Control
                           id="Country"
                           type="text"
-                          placeholder="United States"
+                          placeholder="Germany"
                           style={{ width: "131%" }}
                         />
                       </p>
@@ -135,7 +137,7 @@ const Checkout = () => {
                         <Form.Control
                           id="ZipCode"
                           type="text"
-                          placeholder="2244"
+                          placeholder="224421"
                           style={{ width: "122%" }}
                         />
                       </p>
@@ -215,7 +217,9 @@ const Checkout = () => {
                       >
                         Confirm Order
                       </div>
-                      <div className="btn btn-success" id="ConShip">Continue Shipping</div>
+                      <div className="btn btn-success" id="ConShip">
+                        Continue Shipping
+                      </div>
                     </div>
                   </Form>
                 </ol>

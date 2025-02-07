@@ -265,4 +265,7 @@
   #Details {
     margin: 4pc 0px !important;
   }
+  #Image {
+    display: block !important;
+  }
 }

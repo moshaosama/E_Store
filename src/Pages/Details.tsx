@@ -10,6 +10,8 @@ const Details = () => {
   const id = useParams();
 
   const { data } = useGetCheckOutByIdQuery(id?.id);
+  // console.log(data?.data?.user?.userName);
+
   const user = JSON.parse(localStorage.getItem("user")!);
   enum shippingCost {
     Num1 = "0",
@@ -68,10 +70,14 @@ const Details = () => {
           <div className="text-end">
             <h6 style={{ fontWeight: "bolder" }}>INVOICE TO.</h6>
             <p className="m-0" style={{ fontSize: "13px" }}>
-              {user?.data?.userName}
+              {data?.data?.user?.map((el: any) => {
+                return <p>{el?.userName}</p>;
+              })}
             </p>
-            <p style={{ fontSize: "13px" }}>
-              {user?.data?.Email} +20 01004365707
+            <p style={{ fontSize: "13px" }} className="text-danger">
+              {data?.data?.user?.map((el: any) => {
+                return <p>{el?.Email}</p>;
+              })}
             </p>
           </div>
         </div>
